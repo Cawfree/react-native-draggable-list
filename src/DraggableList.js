@@ -225,7 +225,10 @@ class DraggableGridView extends Component {
     const { activeBlock } = this.state;
 
     return (
-      <ScrollView scrollEnabled={activeBlock === null} style={styles.itemsList}>
+      <ScrollView
+        scrollEnabled={activeBlock === null}
+        style={styles.itemsList}
+      >
         <View style={this.wrapperStyle}>{this.renderBlocks()}</View>
       </ScrollView>
     );

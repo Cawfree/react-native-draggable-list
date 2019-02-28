@@ -107,6 +107,7 @@ class Block extends Component {
       onStartShouldSetPanResponder: () => true,
       onPanResponderMove: (e, gestureState) => this.onDragMove(e, gestureState),
       onPanResponderRelease: () => this.onDragRelease(),
+      onPanResponderTerminate: () => this.onDragRelease(),
       onPanResponderGrant: () => this.onDragGrant(),
     });
   }
